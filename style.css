@@ -4,14 +4,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background: linear-gradient(#615dad, #ffc8da);
-  height: 100vh;
+  background: linear-gradient(#615dad, #615dad, #ffc8da, #ffc8da);
 }
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: auto;
   padding: 50px;
 }
 .items {
@@ -30,8 +27,7 @@ h1 {
   font-weight: 400;
 }
 p {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0px 20px 30px 20px;
   line-height: 25px;
 }
 a {
