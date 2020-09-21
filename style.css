@@ -4,8 +4,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background: linear-gradient(#615dad, #ffc8da);
-  background-position: 100%;
+  background: linear-gradient(#615dad, #ffc8da) no-repeat;
+  height: 100%;
 }
 .container {
   display: flex;
