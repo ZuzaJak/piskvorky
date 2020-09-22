@@ -16,14 +16,9 @@ body {
   align-items: center;
 }
 .items {
-  flex-basis: 25%;
+  width: 300px;
   background-color: #283e50;
   border-radius: 10px 10px 0px 0px;
-}
-@media screen and (max-width: 900px) {
-  .items {
-    flex-basis: 40%;
-  }
 }
 img {
   width: 100%;
