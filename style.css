@@ -78,10 +78,10 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: stretch;
+    align-content: stretch;
   }
   .instructions div {
-    max-width: 45%;
+    flex: 1 1 45%;
     margin: 10px;
   }
 }
