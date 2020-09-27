@@ -21,6 +21,11 @@ body {
   background-color: #283e50;
   border-radius: 10px 10px 0px 0px;
 }
+@media (min-width: 768px) {
+  .items {
+    width: 700px;
+  }
+}
 .items > img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
@@ -67,6 +72,18 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .instructions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .instructions div {
+    max-width: 45%;
+    margin: 10px;
+  }
+}
 .instructions img {
   width: 100%;
 }
@@ -75,4 +92,9 @@ a {
   font-style: italic;
   line-height: 15px;
   margin: 10px 0px 30px 0px;
+}
+@media (min-width: 768px) {
+  .instructions p {
+    font-size: 12px;
+  }
 }
