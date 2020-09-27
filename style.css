@@ -84,6 +84,9 @@ a {
   display: flex;
   flex-direction: column;
 }
+.instructions figure {
+  margin: 0;
+}
 @media (min-width: 768px) {
   .instructions {
     flex-direction: row;
