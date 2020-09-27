@@ -64,6 +64,11 @@ a {
   margin: 20px;
   padding-left: 20px;
 }
+@media (min-width: 768px) {
+  .rules {
+    margin-left: 30px;
+  }
+}
 .rules li {
   padding-bottom: 10px;
   text-align: left;
