@@ -7,7 +7,7 @@ html,
 body {
   background: linear-gradient(#615dad, #ffc8da);
   background-attachment: fixed;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 .container {
