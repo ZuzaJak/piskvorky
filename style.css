@@ -128,15 +128,23 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   min-height: 100vh;
+  max-width: 80vmin;
+  margin: auto;
+}
+.game_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 .hraje-a-ikonky {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-height: 50px;
-  width: 300px;
+  width: 100%;
 }
 .hraje {
   margin: 0;
@@ -181,21 +189,24 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 100%;
   margin-top: 30px;
   border: 1px solid rgb(44, 34, 44);
+  margin-bottom: 40px;
 }
 button {
   padding: 0;
-  width: 30px;
-  height: 30px;
+  position: relative;
+  width: 10%;
+  height: 0;
+  padding-bottom: 10%;
   border: 1px solid rgb(44, 34, 44);
   border-radius: 0;
-  background: rgb(228, 201, 216);
+  opacity: 0.5;
 }
 button:hover {
-  background: rgb(235, 219, 228);
+  opacity: 0.8;
 }
 button:focus {
-  background: rgb(235, 219, 228);
+  opacity: 0.8;
 }
