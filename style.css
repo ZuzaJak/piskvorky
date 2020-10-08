@@ -48,17 +48,17 @@ a {
   line-height: 50px;
 }
 .pravidla {
-  background: #1fcca4;
+  background-color: #1fcca4;
   border-bottom: solid #283e50 1px;
 }
 .pravidla:hover {
-  background: #1cbb96;
+  background-color: #1cbb96;
 }
 .hrat {
-  background: #0197f6;
+  background-color: #0197f6;
 }
 .hrat:hover {
-  background: #0090e9;
+  background-color: #0090e9;
 }
 /* pravidla */
 .rules {
@@ -79,6 +79,8 @@ a {
   filter: invert(100%);
   width: 1em;
   height: 1em;
+  transform: translateY(5px);
+  padding-left: 5px;
 }
 .instructions {
   margin: 20px;
@@ -113,4 +115,71 @@ a {
   .instructions figcaption {
     font-size: 12px;
   }
+}
+/* hra.html */
+.container_hra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.hraje-a-ikonky {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 50px;
+  width: 400px;
+}
+.hraje {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+.ikonky {
+  display: flex;
+}
+.home,
+.restart {
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.home {
+  background-color: #1fcca4;
+  margin-right: 10px;
+}
+.home:hover {
+  background-color: #1cbb96;
+}
+.restart {
+  background-color: #0197f6;
+}
+.restart:hover {
+  background-color: #0090e9;
+}
+/* buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin-top: 30px;
+  border: 1px solid rgb(43, 42, 42);
+}
+button {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(43, 42, 42);
+  border-radius: 0;
+  background: rgb(228, 201, 216);
+}
+button:hover {
+  background: rgb(235, 219, 228);
 }
