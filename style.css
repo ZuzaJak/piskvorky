@@ -54,10 +54,16 @@ a {
 .pravidla:hover {
   background-color: #1cbb96;
 }
+.pravidla:focus {
+  background-color: #1cbb96;
+}
 .hrat {
   background-color: #0197f6;
 }
 .hrat:hover {
+  background-color: #0090e9;
+}
+.hrat:focus {
   background-color: #0090e9;
 }
 /* pravidla */
@@ -156,10 +162,16 @@ a {
 .home:hover {
   background-color: #1cbb96;
 }
+.home:focus {
+  background-color: #1cbb96;
+}
 .restart {
   background-color: #0197f6;
 }
 .restart:hover {
+  background-color: #0090e9;
+}
+.restart:focus {
   background-color: #0090e9;
 }
 /* buttons */
@@ -181,5 +193,8 @@ button {
   background: rgb(228, 201, 216);
 }
 button:hover {
+  background: rgb(235, 219, 228);
+}
+button:focus {
   background: rgb(235, 219, 228);
 }
