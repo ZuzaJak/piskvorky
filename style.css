@@ -82,12 +82,13 @@ a {
   text-align: left;
   line-height: 25px;
 }
-.inlineimg {
+.white {
+  display: inline;
   filter: invert(100%);
-  width: 1em;
-  height: 1em;
-  transform: translateY(2px);
-  padding-left: 5px;
+  transform: translateY(15px);
+  margin: 0;
+
+  padding: 10px 20px 10px 20px;
 }
 .instructions {
   margin: 20px;
@@ -142,7 +143,7 @@ a {
 .hraje-a-ikonky {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   max-height: 50px;
   width: 100%;
 }
@@ -209,4 +210,16 @@ button:hover {
 }
 button:focus {
   opacity: 0.8;
+}
+/* třídy pro javascript */
+
+.board__field--circle {
+  background-image: url('img/circle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board__field--cross {
+  background-image: url('img/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
