@@ -5,7 +5,6 @@ const buttons = document.querySelectorAll('button');
 const hraje = document.querySelector('.white');
 
 const tah = () => {
-  hraje.classList.toggle('board__field--circle');
   hraje.classList.toggle('board__field--cross');
 };
 
