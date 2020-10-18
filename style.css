@@ -211,15 +211,22 @@ button:hover {
 button:focus {
   opacity: 0.8;
 }
+button:active {
+  opacity: 1;
+}
 /* třídy pro javascript */
 
 .board__field--circle {
   background-image: url('img/circle.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70%;
+  opacity: 1;
 }
 .board__field--cross {
   background-image: url('img/cross.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70%;
+  opacity: 1;
 }
