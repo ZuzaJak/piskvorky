@@ -85,10 +85,15 @@ a {
 .white {
   display: inline;
   filter: invert(100%);
-  transform: translateY(15px);
+  transform: translateY(5px);
   margin: 0;
-
-  padding: 10px 20px 10px 20px;
+  padding: 10px 15px;
+}
+.inlineimg {
+  display: inline;
+  filter: invert(100%);
+  transform: translateY(5px);
+  margin: 0;
 }
 .instructions {
   margin: 20px;
@@ -214,7 +219,7 @@ button:focus {
 button:active {
   opacity: 1;
 }
-/* třídy pro javascript */
+/* třídy pro js */
 
 .board__field--circle {
   background-image: url('img/circle.svg');
