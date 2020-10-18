@@ -6,10 +6,10 @@ const hraje = document.querySelector('.white');
 
 const play = (event) => {
   hraje.classList.toggle('board__field--cross');
-  if (hraje === cross) {
-    event.target.classList.add('board__field--cross');
-  } else {
+  if (hraje.classList.contains('board__field--cross')) {
     event.target.classList.add('board__field--circle');
+  } else {
+    event.target.classList.add('board__field--cross');
   }
 };
 
