@@ -1,6 +1,4 @@
 'use strict';
-const circle = document.querySelector('.board__field--circle');
-const cross = document.querySelector('.board__field--cross');
 const buttons = document.querySelectorAll('button');
 const hraje = document.querySelector('.white');
 
