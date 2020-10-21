@@ -4,8 +4,7 @@
 const buttons = document.querySelectorAll('button');
 const hraje = document.querySelector('.white');
 
-/* Funkce, která přidává na event.target třídy podle toho, jaká třída je na proměnné "hraje", zároveň se u "hraje" přidává a odebírá třída "board__field--cross"(toggle).
-Chyba - po opětovném kliknutí na políčko již obsahující křížek (když je na tahu kolečko) se přidá třída kolečka k buttonu a prohodí se, kdo je na tahu */
+/* Funkce, která přidává na event.target třídy podle toho, jaká třída je na proměnné "hraje", po kliknutí se nastaví atribut disabled a zároveň se u "hraje" přidává a odebírá třída "board__field--cross"(toggle). */
 const play = (event) => {
   if (hraje.classList.contains('board__field--cross')) {
     event.target.classList.add('board__field--cross');
