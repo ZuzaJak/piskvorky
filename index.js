@@ -4,10 +4,10 @@
 const buttons = document.querySelectorAll('button');
 const hraje = document.querySelector('.white');
 
-//funkce, která přidává na event.target (tlačítka) třídy podle toho, jaká třída je na proměnné hraje, zároveň se třídy u hraje mění pomocí toggle
-//přidání vnořené podmínky, aby se nedala měnit třída tlačítka, které už třída přidána byla (přepisovalo se kolečko na křížek)
+/* 1) funkce, která přidává na event.target (tlačítka) třídy podle toho, jaká třída je na proměnné hraje, zároveň se třídy u hraje mění pomocí toggle
+2.verze) přidání vnořené podmínky, aby se nedala měnit třída tlačítka, které už třída přidána byla (přepisovalo se kolečko na křížek)
+3.verze) vnoření hraje.classList.toggle do podmínky, ale ještě to blbne při opětovném kliknutí na křížek (přidá to dvě třídy buttonu, zatím nevidím proč...) */
 const play = (event) => {
-  hraje.classList.toggle('board__field--cross');
   if (hraje.classList.contains('board__field--cross')) {
     if (
       event.target.classList.contains(
@@ -16,7 +16,8 @@ const play = (event) => {
     ) {
       return null;
     } else {
-      event.target.classList.add('board__field--circle');
+      event.target.classList.add('board__field--cross');
+      hraje.classList.toggle('board__field--cross');
     }
   } else {
     if (
@@ -26,7 +27,8 @@ const play = (event) => {
     ) {
       return null;
     } else {
-      event.target.classList.add('board__field--cross');
+      event.target.classList.add('board__field--circle');
+      hraje.classList.toggle('board__field--cross');
     }
   }
 };
