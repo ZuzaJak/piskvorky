@@ -52,18 +52,14 @@ a {
   background-color: #1fcca4;
   border-bottom: solid #283e50 1px;
 }
-.pravidla:hover {
-  background-color: #1cbb96;
-}
+.pravidla:hover,
 .pravidla:focus {
   background-color: #1cbb96;
 }
 .hrat {
   background-color: #0197f6;
 }
-.hrat:hover {
-  background-color: #0090e9;
-}
+.hrat:hover,
 .hrat:focus {
   background-color: #0090e9;
 }
@@ -174,18 +170,14 @@ a {
   background-color: #1fcca4;
   margin-right: 10px;
 }
-.home:hover {
-  background-color: #1cbb96;
-}
+.home:hover,
 .home:focus {
   background-color: #1cbb96;
 }
 .restart {
   background-color: #0197f6;
 }
-.restart:hover {
-  background-color: #0090e9;
-}
+.restart:hover,
 .restart:focus {
   background-color: #0090e9;
 }
@@ -208,14 +200,11 @@ button {
   padding-bottom: 10%;
   border: 1px solid rgb(44, 34, 44);
   border-radius: 0;
+  background-color: #ffc8da;
   opacity: 0.5;
 }
-button:hover {
-  opacity: 0.8;
-}
-button:focus {
-  opacity: 0.8;
-}
+button:hover,
+button:focus,
 button:active {
   opacity: 0.8;
 }
@@ -226,12 +215,14 @@ button:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
-  opacity: 0.8;
 }
 .board__field--cross {
   background-image: url('img/cross.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
-  opacity: 0.8;
+}
+button:disabled {
+  background-color: #ffc8da;
+  opacity: 0.5;
 }
