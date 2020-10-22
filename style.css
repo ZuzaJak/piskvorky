@@ -201,7 +201,7 @@ button {
   border: 1px solid rgb(44, 34, 44);
   border-radius: 0;
   background-color: #ffc8da;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 button:hover,
 button:focus,
@@ -215,14 +215,26 @@ button:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+  animation-duration: 0.15s;
+  animation-name: size;
 }
 .board__field--cross {
   background-image: url('img/cross.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+  animation-duration: 0.15s;
+  animation-name: size;
+}
+@keyframes size {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 70%;
+  }
 }
 button:disabled {
   background-color: #ffc8da;
-  opacity: 0.5;
+  opacity: 0.7;
 }
