@@ -93,9 +93,11 @@ const play = (event) => {
   if (isWinningMove(event.target)) {
     console.log('isWinningMove je true');
     if (event.target.classList.contains('board__field--cross')) {
-      alert('Vyhrává křížek!');
+      confirm('Vyhrává křížek!');
+      location.reload();
     } else if (event.target.classList.contains('board__field--circle')) {
-      alert('Vyhrává kolečko!');
+      confirm('Vyhrává kolečko!');
+      location.reload();
     }
   }
 };
