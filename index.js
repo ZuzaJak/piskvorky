@@ -76,7 +76,72 @@ const isWinningMove = (field) => {
   if (inColumn >= symbolsToWin) {
     return true;
   }
+  let diagonalRow;
+  let diagonalColumn;
 
+  let diagonalRight = 1;
+
+  diagonalRow = origin.row;
+  diagonalColumn = origin.column;
+
+  while (
+    diagonalColumn < boardSize - 1 &&
+    diagonalRow > 0 &&
+    symbol === getSymbol(getField(diagonalRow - 1, diagonalColumn + 1))
+  ) {
+    diagonalRight += 1;
+    diagonalRow -= 1;
+    diagonalColumn += 1;
+  }
+
+  diagonalRow = origin.row;
+  diagonalColumn = origin.column;
+
+  while (
+    diagonalRow < boardSize - 1 &&
+    diagonalColumn > 0 &&
+    symbol === getSymbol(getField(diagonalRow + 1, diagonalColumn - 1))
+  ) {
+    diagonalRight += 1;
+    diagonalRow += 1;
+    diagonalColumn -= 1;
+  }
+
+  if (diagonalRight >= symbolsToWin) {
+    return true;
+  }
+
+  let diagonalLeft = 1;
+
+  diagonalRow = origin.row;
+  diagonalColumn = origin.column;
+
+  while (
+    diagonalColumn < boardSize - 1 &&
+    diagonalRow > 0 &&
+    symbol === getSymbol(getField(diagonalRow - 1, diagonalColumn - 1))
+  ) {
+    diagonalLeft += 1;
+    diagonalRow -= 1;
+    diagonalColumn -= 1;
+  }
+
+  diagonalRow = origin.row;
+  diagonalColumn = origin.column;
+
+  while (
+    diagonalRow < boardSize - 1 &&
+    diagonalColumn > 0 &&
+    symbol === getSymbol(getField(diagonalRow + 1, diagonalColumn + 1))
+  ) {
+    diagonalLeft += 1;
+    diagonalRow += 1;
+    diagonalColumn += 1;
+  }
+
+  if (diagonalLeft >= symbolsToWin) {
+    return true;
+  }
   return false;
 };
 
